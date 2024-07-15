@@ -1,0 +1,123 @@
+/* src/styles/styles.css */
+
+/* Variables */
+:root {
+    --primary-color: #000925;
+    --secondary-color: #2277ff;
+    --background-color: #f4f4f9;
+    --text-color: #333;
+    --card-background-color: #fff;
+    --card-border-color: #ddd;
+    --input-border-color: #ccc;
+    --button-background-color: var(--primary-color);
+    --button-hover-background-color: #000000;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  /* Movie List */
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Movie Card */
+  .movie-card {
+    background-color: var(--card-background-color);
+    border: 1px solid var(--card-border-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 200px;
+    text-align: center;
+  }
+  
+  .movie-card img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .movie-card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .movie-card p {
+    font-size: 0.9em;
+    color: var(--text-color);
+  }
+  
+  .movie-card span {
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+  
+  /* Filter */
+  .filter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filter input {
+    padding: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+  }
+  
+  /* Add Movie Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  form input {
+    padding: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  form button {
+    background-color: var(--button-background-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: var(--button-hover-background-color);
+  }
+  

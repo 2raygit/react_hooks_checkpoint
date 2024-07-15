@@ -1,0 +1,38 @@
+/* src/index.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.movie-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.filter input {
+  margin: 0 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  margin: 8px 0;
+}
+  
